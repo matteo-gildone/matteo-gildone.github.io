@@ -1,0 +1,22 @@
+{
+  "name": "matteo-gildone.github.io",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matteo-gildone/matteo-gildone.github.io.git"
+  },
+  "author": "Matteo Gildone <matteo.gildone@gmail.com> (http://domsmasher.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matteo-gildone/matteo-gildone.github.io/issues"
+  },
+  "homepage": "https://github.com/matteo-gildone/matteo-gildone.github.io#readme",
+  "devDependencies": {
+    "normalize.css": "^7.0.0"
+  }
+}
