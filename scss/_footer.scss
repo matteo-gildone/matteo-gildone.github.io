@@ -5,7 +5,14 @@
    right: 0;
    padding: 2rem;
    @include font-size(1.4);
+   overflow: hidden;
    p {
        margin: 0;
    } 
+}
+
+.more-info {
+    float: left;
+    max-width: 500px;
+    padding-right: 40px;
 }

@@ -1,0 +1,19 @@
+.navigation {
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+    ul,
+    ul li { 
+        list-style-type: none;
+    }
+    li {
+        display: inline-block;
+        margin: 0 10px;
+    }
+}
+
+.navigation--footer {
+    float: right;
+    max-width: 300px;
+}
