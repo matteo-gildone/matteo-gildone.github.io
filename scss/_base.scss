@@ -9,11 +9,24 @@ html {
 }
 
 body {
-    font-family: 'Spectral', serif;
-    background-color: #fff;
-    color: #222;
+    font-family: 'Arbutus Slab', serif;
+    background-color: theme-color("primary");
+    color: theme-color("secondary");
     font-size: 17px;
     font-size: 1.7rem;
     line-height: 1.7;
     min-height: 100%;
+}
+
+address {
+    font-style: normal;
+}
+
+a {
+    color: $link-color;
+    text-decoration: $link-decoration;
+    &:hover {
+        color: $link-hover-color;
+        text-decoration: $link-hover-decoration;
+    }
 }
