@@ -455,7 +455,8 @@ a {
   padding: 2rem;
   font-size: 14px;
   font-size: 1.4rem;
-  overflow: hidden; }
+  overflow: hidden;
+  background-color: #212529; }
   .footer p {
     margin: 0; }
 

@@ -6,6 +6,7 @@
    padding: 2rem;
    @include font-size(1.4);
    overflow: hidden;
+   background-color: theme-color("primary");
    p {
        margin: 0;
    } 
