@@ -1,0 +1,2 @@
+"use strict";importScripts("lib/sw-toolbox/sw-toolbox.js");var precacheFiles=["./","../","../css/styles.css","../img/logo.svg"];toolbox.precache(precacheFiles),self.addEventListener("install",function(e){return e.waitUntil(self.skipWaiting())}),self.addEventListener("activate",function(e){return e.waitUntil(self.clients.claim())}),self.addEventListener("fetch",function(e){e.respondWith(caches.match(e.request).then(function(t){return t||fetch(e.request)}))});
+//# sourceMappingURL=main.js.map
