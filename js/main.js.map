@@ -1,1 +1,1 @@
-{"version":3,"sources":["service-worker.js"],"names":["importScripts","precacheFiles","toolbox","precache","self","addEventListener","event"],"mappings":"YACAA,8CAIA,IAAAC,iEAMAC,SAAAC,wBAGAC,KAAAC,iBAAA,UAAA,SAAAC,4CACAF,KAAAC,iBAAA,WAAA,SAAAC,8CAGAF,KAAAC,iBAAA,QAAA,SAAAC"}
+{"version":3,"sources":["service-worker.js"],"names":["importScripts","precacheFiles","toolbox","precache","self","addEventListener","event"],"mappings":"YACAA,8CAIA,IAAAC,4DAKAC,SAAAC,wBAGAC,KAAAC,iBAAA,UAAA,SAAAC,4CACAF,KAAAC,iBAAA,WAAA,SAAAC,8CAGAF,KAAAC,iBAAA,QAAA,SAAAC"}

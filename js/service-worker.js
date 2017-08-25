@@ -4,7 +4,6 @@ importScripts('lib/sw-toolbox/sw-toolbox.js');
 
 // Files to precache
 const precacheFiles = [
-    './',
     '../',    
     '../css/styles.css',
     '../img/logo.svg'
