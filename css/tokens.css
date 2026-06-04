@@ -1,0 +1,212 @@
+/* ── 1. Colour primitives ────────────────────────────────── */
+
+:root {
+    /* warm neutral scale */
+    --n-950: #0f0e0d;   /* page background          */
+    --n-900: #181614;   /* card / surface            */
+    --n-850: #222020;   /* tag / raised surface      */
+    --n-800: #1e1c1a;   /* dividers                  */
+    --n-750: #3a3830;   /* interactive borders       */
+    --n-600: #4a4440;   /* decorative text only      */
+    --n-500: #5a5450;   /* supplementary text        */
+    --n-400: #7a726b;   /* metadata  (≥14px, 4.3:1)  */
+    --n-300: #8a8278;   /* secondary text   (5.3:1)  */
+    --n-100: #d8d0c8;   /* primary text    (12.6:1)  */
+
+    /* phosphor green */
+    --green-900: #2a4e35;
+    --green-500: #52e87a;
+
+    /* phosphor amber */
+    --amber-900: #4a2e10;
+    --amber-500: #e89c38;
+}
+
+
+/* ── 2. Semantic colour ──────────────────────────────────── */
+
+:root {
+
+    /* backgrounds */
+    --bg:          var(--n-950);
+    --bg-surface:  var(--n-900);
+    --bg-raised:   var(--n-850);
+
+    /* borders */
+    --border:      var(--n-800);
+    --border-ui:   var(--n-750);
+
+    /* text
+       contrast ratios vs --bg (#0f0e0d)
+       ─────────────────────────────────────────────────────────
+       --text            12.6:1   use anywhere
+       --text-secondary   5.3:1   use anywhere
+       --text-meta        4.3:1   AA Large; min 14px or 12px bold
+       --text-dim         2.9:1   decorative / ≥24px only
+       --text-ghost       2.1:1   decorative only — never for copy
+       ───────────────────────────────────────────────────────── */
+    --text:           var(--n-100);
+    --text-secondary: var(--n-300);
+    --text-meta:      var(--n-400);
+    --text-dim:       var(--n-500);
+    --text-ghost:     var(--n-600);
+
+    /* accents */
+    --accent:     var(--green-500);   /* released · active · links    */
+    --accent-dim: var(--green-900);   /* card accent bars (released)   */
+    --hot:        var(--amber-500);   /* cursor · building · featured  */
+    --hot-dim:    var(--amber-900);   /* card accent bars (featured)   */
+}
+
+
+/* ── 3. Typography ───────────────────────────────────────── */
+
+:root {
+
+    /* stack — everything is mono */
+    --font: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+
+    /* scale (rem assumes 16px root)
+       ──────────────────────────────────────────
+       --text-xs      10px   tags, tiny meta
+       --text-sm      11px   nav, footer, buttons
+       --text-base    12px   eyebrow, currently
+       --text-md      13px   commands, descriptions
+       --text-lg      14px   writing titles, tagline
+       --text-xl      16px   reserved, cards
+       --text-2xl     20px   headroom
+       --text-3xl     32px   blog headings (h2)
+       --text-display 48px   hero name
+       ────────────────────────────────────────── */
+    --text-xs:      0.625rem;
+    --text-sm:      0.6875rem;
+    --text-base:    0.75rem;
+    --text-md:      0.8125rem;
+    --text-lg:      0.875rem;
+    --text-xl:      1rem;
+    --text-2xl:     1.25rem;
+    --text-3xl:     2rem;
+    --text-display: 3rem;
+
+    /* weights */
+    --weight-normal: 400;
+    --weight-bold:   700;
+
+    /* leading */
+    --leading-tight:   1.25;   /* display text, hero name  */
+    --leading-snug:    1.45;   /* project names, headings  */
+    --leading-normal:  1.65;   /* descriptions, body       */
+    --leading-relaxed: 1.85;   /* blog posts, long prose   */
+
+    /* tracking */
+    --tracking-tight:  -0.03em;   /* hero name                */
+    --tracking-normal:  0;
+    --tracking-wide:    0.10em;   /* section label eyebrows   */
+
+    /* measure */
+    --prose-width:  45rem;      /* 720px — blog, about       */
+    --layout-width: 68.75rem;   /* 1100px — project grid     */
+}
+
+
+/* ── 4. Spacing ──────────────────────────────────────────── */
+
+:root {
+
+    /* 8px base scale */
+    --space-1:   0.25rem;   /*  4px */
+    --space-2:   0.5rem;    /*  8px */
+    --space-3:   0.75rem;   /* 12px */
+    --space-4:   1rem;      /* 16px */
+    --space-5:   1.25rem;   /* 20px */
+    --space-6:   1.5rem;    /* 24px */
+    --space-8:   2rem;      /* 32px */
+    --space-10:  2.5rem;    /* 40px */
+    --space-12:  3rem;      /* 48px */
+    --space-16:  4rem;      /* 64px */
+    --space-20:  5rem;      /* 80px */
+    --space-24:  6rem;      /* 96px */
+
+    /* semantic spacing */
+    --gap-card:        var(--space-2);    /* between stacked cards     */
+    --gap-section:     var(--space-16);   /* between page sections     */
+    --gap-section-sm:  var(--space-10);   /* tighter section gap       */
+    --padding-card:    var(--space-4) var(--space-5);   /* card internal */
+    --padding-page-x:  var(--space-10);   /* horizontal page gutter    */
+}
+
+
+/* ── 5. Shape & borders ──────────────────────────────────── */
+
+:root {
+
+    /* radius — hard-edged by default, terminal convention */
+    --radius:    0;     /* cards, buttons — never rounded */
+    --radius-xs: 2px;   /* tag pills only                 */
+
+    /* card accent bar */
+    --bar-width: 3px;
+
+    /* borders */
+    --border-width: 1px;
+}
+
+
+/* ── 6. Motion ───────────────────────────────────────────── */
+
+:root {
+
+    --duration-fast: 80ms;
+    --duration-base: 180ms;
+    --ease-out: cubic-bezier(0.2, 0, 0, 1);
+
+    /* standard transition shorthand */
+    --transition: background var(--duration-base) var(--ease-out),
+    color       var(--duration-base) var(--ease-out),
+    border-color var(--duration-base) var(--ease-out);
+}
+
+
+/* ── 7. Component aliases ────────────────────────────────── */
+
+:root {
+
+    /* --- card --- */
+    --card-bg:          var(--bg-surface);
+    --card-bar:         var(--accent-dim);    /* default bar colour   */
+    --card-bar-hot:     var(--hot-dim);       /* featured / in-flight */
+
+    /* --- tag --- */
+    --tag-bg:           var(--bg-raised);
+    --tag-text-lang:    var(--accent);
+    --tag-text-version: var(--text-meta);
+
+    /* --- status dots --- */
+    --dot-released:     var(--accent);
+    --dot-building:     var(--hot);
+
+    /* --- nav --- */
+    --nav-link:         var(--text-dim);
+    --nav-active:       var(--accent);
+    --nav-name:         var(--text-ghost);
+
+    /* --- section command line --- */
+    --prompt:           var(--accent);
+    --cmd-text:         var(--text);
+
+    /* --- hero --- */
+    --eyebrow:          var(--accent);
+    --cursor:           var(--hot);
+
+    /* --- buttons --- */
+    --btn-border:       var(--border-ui);
+    --btn-primary-fg:   var(--accent);
+    --btn-default-fg:   var(--text-meta);
+
+    /* --- writing list --- */
+    --entry-title:      var(--text);
+    --entry-meta:       var(--text-meta);
+    --entry-title-old:  var(--text-dim);
+    --entry-meta-old:   var(--text-ghost);
+    --entry-divider:    var(--border);
+}

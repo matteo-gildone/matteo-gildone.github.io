@@ -6,10 +6,37 @@
     <meta name="description" content="Matteo Gildone | Fullstack Developer">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist&family=JetBrains+Mono:wght@100..800&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/tokens.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<main class="wrap main" role="main">
-    <div>Under construction</div>
+<header class="header">
+    <a href="/" class="nav-brand" aria-label="matteo gildone - home">~/matteo-gildone</a>
+</header>
+<main role="main">
+    <section class="hero">
+        <p class="hero-tagline" style="margin:0;">Last login: Wed June 3 09:41:00 on ttys001</p>
+        <h1 class="hero-name">matteo gildone</h1>
+        <p class="hero-tagline">frontend developer and go toolmaker<span class="cursor">_</span></p>
+        <p class="hero-tagline">currently: building tokensnap | reading write an interpreter in go | Warhammer RPG</p>
+    </section>
+    <section class="about" aria-labelledby="about-heading">
+        <h2 id="about-heading" class="sr-only">About</h2>
+        <p class="cmd"><span class="prompt">~ $</span> cat about.md</p>
+        <p class="hero-tagline">Frontend developer and Go toolmaker.</p>
+        <p class="hero-tagline">I build foundations other developers build on.</p>
+    </section>
+    <section class="projects" aria-labelledby="projects-heading">
+        <h2 id="projects-heading" class="sr-only">Projects</h2>
+        <p class="cmd"><span class="prompt">~ $</span> ls projects/</p>
+        <p class="hero-tagline">Frontend developer and Go toolmaker.</p>
+        <p class="hero-tagline">I build foundations other developers build on.</p>
+    </section>
 </main>
+<footer class="footer">matteo gildone</footer>
 </body>
 </html>
