@@ -118,7 +118,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer {
-    color: #8a8278;
+    color: var(--text-secondary);
     padding: 1.5rem;
     margin-block: 1rem;
     border-top: 1px solid var(--entry-divider);
@@ -130,6 +130,10 @@ h1, h2, h3, h4, h5, h6 {
     padding: 1.5rem;
     margin-block: 1rem;
     border-bottom: 1px solid var(--entry-divider);
+}
+
+.projects {
+    border: none;
 }
 
 .hero-name {
@@ -151,11 +155,47 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
     margin: -1px;
     overflow: hidden;
-    clip: rect(0,0,0,0);
+    clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border: 0;
 }
 
 .prompt {
     color: var(--eyebrow);
+}
+
+.project-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.project-item {
+    display: grid;
+    grid-template-columns: 12ch 10ch 10ch 1fr;
+    line-height: var(--leading-normal);
+}
+
+.project-name {
+    color: var(--eyebrow);
+    text-decoration: none;
+}
+
+.project-name:hover {
+    text-decoration: underline;
+}
+
+.project-meta {
+    color: var(--text-secondary);
+}
+
+@media (max-width: 600px) {
+    .project-item {
+        grid-template-columns: 12ch 10ch 1fr;
+    }
+
+    .project-meta,
+    .project-desc {
+        display: none;
+    }
 }
